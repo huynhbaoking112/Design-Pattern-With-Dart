@@ -1,0 +1,24 @@
+3) Lợi ích của Adapter Pattern là gì?
+Việc sử dụng Adapter Pattern đem lại các lợi ích sau:
+
+Cho phép nhiều đối tượng có interface giao tiếp khác nhau có thể tương tác và giao tiếp với nhau.
+Tăng khả năng sử dụng lại thư viện với interface không thay đổi do không có mã nguồn.
+Bên cạnh những lợi ích trên, nó cũng nó một số khuyết điểm nhỏ sau:
+
+Tất cả các yêu cầu được chuyển tiếp, do đó làm tăng thêm một ít chi phí.
+Đôi khi có quá nhiều Adapter được thiết kế trong một chuỗi Adapter (chain) trước khi đến được yêu cầu thực sự.
+
+
+3) Sử dụng Adapter Pattern khi nào?
+Có thể dùng Adapter Pattern trong những trường hợp sau:
+
+Adapter Pattern giúp nhiều lớp có thể làm việc với nhau dễ dàng mà bình thường không thể. Một trường hợp thường gặp phải và có thể áp dụng Adapter Pattern là khi không thể kế thừa lớp A, nhưng muốn một lớp B có những xử lý tương tự như lớp A. Khi đó chúng ta có thể cài đặt B theo Object Adapter, các xử lý của B sẽ gọi những xử lý của A khi cần.
+Khi muốn sử dụng một lớp đã tồn tại trước đó nhưng interface sử dụng không phù hợp như mong muốn.
+Khi muốn tạo ra những lớp có khả năng sử dụng lại, chúng phối hợp với các lớp không liên quan hay những lớp không thể đoán trước được và những lớp này không có những interface tương thích.
+Cần phải có sự chuyển đổi interface từ nhiều nguồn khác nhau.
+Khi cần đảm bảo nguyên tắc Open/ Close trong một ứng dụng.
+
+
+=> Tự rút ra kết luận:
+    - Bản chất của adapter Pattern giúp cho việc phối hợp nhiều class với nhau mà không cần thông qua các implements 
+    - Sử dụng 1 class implement đồng thời khởi tạo các class còn lại sau đó truyền vào super class từ đây ta có thể sử dụng các phương thức của các class ấy một cách bình thường
