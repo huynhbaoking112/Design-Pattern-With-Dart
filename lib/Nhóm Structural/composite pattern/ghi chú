@@ -1,0 +1,25 @@
+
+# Khi nào sử dụng
+    - Khi cần xử lí một nhóm object cùng loại tương tự xử lí một object
+    
+# Cách cài đặt:
+    
+    - BaseComponent
+
+    - Leaf Component
+
+    - Composite Component 
+
+
+
+
+
+
+
+
+
+
+=> Nhận xét: Composite pattern là cấu trúc nhóm với:
+    1) class tổng: Chứa các hàm trừu tượng mà class con cần có
+    2) class con: implements từ class tổng và ghi đè nó
+    3) class nhóm: Class chứa List các class con implements từ class tổng và xử lý hàng loạt object con cùng lúc
