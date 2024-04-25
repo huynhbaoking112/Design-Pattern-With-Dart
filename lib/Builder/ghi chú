@@ -1,0 +1,5 @@
+# Công dụng của Builder Pattern
+    - Không phải dùng null để điền vào đối với những thuộc tính không dùng
+    - Không phải nhớ rõ vị trí của từng giá trị constructor
+    - Code dễ độc, dễ bảo trì hơn khi số lượng thuộc tính bắt buộc để tạo một object từ 4 hoặc 5 propery
+    
