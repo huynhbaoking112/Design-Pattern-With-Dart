@@ -1,0 +1,24 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=> Kết luận: đối với loại pattern này bản chất là tách abstract ra một lớp và logic xử lí (implement) ra một lớp  (Cả 2 lớp này đều là một lớp trừu tượng)
+
+Đối với lớp abstract thì bên trong nó sẽ triển khai object của thằng lớp implement để có thể xử dụng các phương thức của lớp này 
+
+
