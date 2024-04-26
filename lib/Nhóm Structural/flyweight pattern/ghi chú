@@ -1,0 +1,76 @@
+
+
+
+=> Kết luận:
+  
+  1) Công dụng:
+    Chuyên dùng cho những bài toán phải tạo đi tạo lại nhiều đối tượng có hầu hết các phương thức giống nhau => gây mất thời gian + tràn bộ nhớ
+    vd: Tạo một game có hàng loạt lính có hành vi và khả năng giống nhau nhưng chỉ khác nhau về màu sắc
+
+  2) Cách triển khai:
+    1) Tạo lớp FlyWeight cho lớp lính, là abstract class định nghĩa các phương thức mà các người lính đều có, đặc biệt phải tạo một phương thức với đối số là context để triển khai những hành vi đặc biệt dị năng của người lính 
+
+        Code:  abstract class ThuocTinhNhanVat {
+                //intrinsic
+                void hanhvi();
+                void khanang();
+
+                //extrinsic
+                void mausac(Context context);
+             }
+    
+    2) Tạo lớp context chứa dị năng đặc biệt của người lính :
+
+        Code: //Context
+            class Context {
+            String color;
+            Context(this.color);
+
+            String getColor() {
+                return color;
+            }
+            }
+
+    3) Tạo một concreateFlyWeight người lính :
+        
+        Code: //Concrete FlyWeight
+            class NhanVat implements ThuocTinhNhanVat {
+            String nhanvat;
+            NhanVat(this.nhanvat);
+
+            @override
+            void hanhvi() {
+                print(nhanvat + "buoc di");
+            }
+
+            @override
+            void khanang() {
+                print(nhanvat + "ban sung");
+            }
+
+            @override
+            void mausac(Context context) {
+                print("Day la " + nhanvat + " co mau sac la " + context.getColor());
+            }
+            }
+    
+    4) Tạo một factory Class( Private constructor): Lớp này chứa bên trong một Map<> các phần tử lính đã được tạo và một bộ trả về nếu Map<> có chứa người lính loại này thì trả về còn không thì tạo và add thêm vào Map
+
+        Code:
+                            //FactoryFlyWeight
+                class FactoryFlyWeight {
+                static Map<String, NhanVat> allNhanvat = {};
+
+                FactoryFlyWeight._internal();
+
+                static Future<NhanVat> createOrGetNhanVat(String name) async {
+                    if (allNhanvat.containsKey(name)) {
+                    return allNhanvat[name]!;
+                    } else {
+                    await Future.delayed(Duration(seconds: 2));
+                    NhanVat nhanvat = NhanVat(name);
+                    allNhanvat[name] = nhanvat;
+                    return allNhanvat[name]!;
+                    }
+                }
+                }
