@@ -1,0 +1,27 @@
+=> Kết luận:
+
+    - Bản chất của nó là tạo 2 interface chính một interface object bao gồm 3 phương thức 1 phương thức add observer 1 phương thức remove observer 1 phương thức xử lí phát sự kiện. Bên cạnh đó interface còn lại là Observer nó mang một phương thức chung phát ra khi có sự kiện
+
+    - Thực chất nguyên lí của nó là tạo một List lưu trữ các Observer chỉ cần có thay đổi thì map list và tại mỗi Observer gọi phương thức chung phát ra khi có sự kiện của observer
+
+
+    - Lợi ích:
+
+        + Dễ dàng mở rộng với ít sự thay đổi: Mẫu này cho phép thay đổi Subject và Observer một cách độc lập. Chúng ta có thể tái sử dụng các Subject mà không cần tái sử dụng các Observer và ngược lại. Nó cho phép thêm Observer mà không sửa đổi subject hoặc observer khác. Vì vậy nó đảm bảo nguyên tắc Open. Close
+
+        + Sự thay đổi trạng thái ở 1 đối tượng có thể dược thông báo đến các đối tượng khác mà không phải giữ chúng liên kết quá chặt chẽ
+
+        + Một đối tượng có thể thông báo đến một số lượng không giơius hạn các đối tượng khác
+
+
+    - Trường hợp sử dụng:
+
+        + Thường được sử dụng trong mối quan hệ 1-n giữa các object với nhau. Trong đó một đối tượng thay đổi và muốn thông báo cho tất cả các object liên quan biết về sự thay đổi đó.
+
+        + Khi thay đổi một đối tượng, yêu cầu thay đổi đối tượng khác và chúng ta không biết có bao nhiêu đối tượng cần thay đổi, những đối tượng này là ai.
+        
+        + Sử dụng trong ứng dụng broadcast-type communication.
+
+        + Sử dụng để quản lý sự kiện (Event management).
+
+        + Sử dụng trong mẫu mô hình MVC (Model View Controller Pattern) : trong MVC, mẫu này được sử dụng để tách Model khỏi View. View đại diện cho Observer và Model là đối tượng Observable.
