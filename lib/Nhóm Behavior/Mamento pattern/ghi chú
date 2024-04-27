@@ -1,0 +1,33 @@
+
+
+=> Kết luận cá nhân :
+
+    - Bản chất của mamentoPattern là tạo 3 lớp chính gồm có
+
+        + Mamento 
+
+        + Lớp chính (Originator)
+
+        + Caretaker ( Lớp lưu trữ các mamento )
+
+    - Trong 3 lớp trên:
+
+        + Mamento có công dụng lưu trữ trạng thái hiện tại của lớp chính
+
+
+        + Lớp chính sẽ có một phương thức undo nhận Mamento làm tham số
+
+
+        + Caretaker bao gồm một mảng lưu trữ các mamento 
+
+    - Lợi ích:
+
+        + Bảo đảm nguyên tắc đóng gói: Sử dụng trực tiếp trạng thái của đối tượng có thể làm lộ thông tin chi tiết bên trong đối tượng và vi phạm nguyên tắc đóng gói.
+
+        + Đơn giản code của Originator bằng cách để Mamento lưu giữ trạng thái của Originator và Caretaker quản lý lịch sử thay đổi của Originator 
+    
+    - Sử dụng Memento Pattern khi nào?
+        
+        + Các ứng dụng cần chức năng cần Undo/ Redo: lưu trạng thái của một đối tượng bên ngoài và có thể restore/ rollback sau này.
+        
+        + Thích hợp với các ứng dụng cần quản lý transaction.
