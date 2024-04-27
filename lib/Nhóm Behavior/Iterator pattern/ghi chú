@@ -1,0 +1,5 @@
+=> Kết luận:
+
+    - Bản chất nó không có gì quá đặc biệt chỉ là nó đưa hết data vào một mảng rồi duyệt qua 
+
+    - Tạo một iterator gồm 2 hàm chính là hasData và nextData để kiểm soát dữ liệu sao đó tạo một concretorIterator implements từ iterator này để kiểm soát và in phần tử 
