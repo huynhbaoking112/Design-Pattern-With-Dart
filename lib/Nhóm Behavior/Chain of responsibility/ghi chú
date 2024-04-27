@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+
+
+=> Kết luận:
+    * Chain_of_responsibility_pattern thuộc nhóm behavior pattern
+    
+    * Kết cấu:
+
+        - Có kết cấu dạng danh sách liên kết
+    
+    * Mục đích sử dụng:
+        
+        - Sử dụng cho những bài toán: 
+            
+                + Có nhiều hơn một đối tượng có khả năng xử lý một yêu cầu trong khi đối tượng cụ thể nào xử lý yêu cầu đó lại phụ thuộc vào ngữ cảnh sử dụng
+
+                + Muốn gửi yêu cầu đến một trong số vài đối tượng nhưng không xác định đối tượng cụ thể nào sẽ sử lý yêu cầu đó
+
+                + Khi cần phải thực thi các trình xử lý theo một thứ tự nhất định
+
+                + Khi một tập hợp các đối tượng xử lý có thể thay đổi động: tâp hợp các đối tượng có khả năng xử lý yêu cầu có thể không biết trước, có thể thêm bớt hay thay đổi thứ tự sau này
+
+    * Lợi ích
+
+        - Giảm kết nối: Thay vì một đối tượng có khả năng xử lý yêu cầu chứa tham chiếu đến tất cả các đối tượng khác, nó chỉ cần một tham chiếu đến đối tượng tiếp theo. Tránh sự liên kết trức tiếp giữa đối tượng gửi yêu cầu và các đối tượng nhận yêu cầu
+
+        - Tăng tính linh hoạt: Đảm bảo Open/ Close Priciple
+
+        - Phân chia trách nhậm cho các đối tượng: Đảm bảo Single Responsibility Principle
+
+        - Có khả năng thay đổi dây chuyền trong thời gian chạy
+
+        - Không đảm bảo có đối tượng xử lý yêu cầu
+        

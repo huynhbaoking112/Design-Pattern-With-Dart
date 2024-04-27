@@ -1,0 +1,6 @@
+SOLID gồm 5 nguyên lý chính
+    1) Mỗi class chỉ có khả năng thực hiện một trách nhiệm duy nhất và chỉ có thể thay đổi với 1 lý do
+    2) Không nên triển khai toàn bộ các tính năng vào 1 interface duy nhất mà nên tách rời chúng thành các interface nhỏ hoặc kế thừa nhau
+    3) Có thể mở rộng class nhưng không được thay đổi nó
+    4) Object của class con có khả năng thay thế class cha
+    5) Tách biệt phụ thuộc giữa các class 
