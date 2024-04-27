@@ -1,0 +1,13 @@
+Kết luận:
+
+    - Đúng với nhận định ban đầu là triển khai một lớp trung gian và các lớp giao tiếp xử lí sự kiện thông qua lớp trung gian này chứ không trực tiếp xử lí ( Lớp trung gian này gọi là lớp Mediator )
+
+    - Khá giống với Facade Pattern nhưng khác ở chỗ Facade pattern các lớp có thể giao tiếp với nhau còn mediator pattern các lớp chỉ có thể giao tiếp với nhau qua lớp mediator
+
+    - Ưu điểm:
+        
+        + Che dấu logic
+
+        + Tách biệt các lớp khiến các lớp ít bị phụ thuộc vào nhau thuận lợi cho scale
+
+        + Tuân thủ theo nguyên lý SRP trong SOLID là mỗi lớp chỉ đảm nhiệm một nhiệm vụ duy nhất và chỉ có thể sửa đổi lớp đó với 1 lý do
