@@ -1,0 +1,28 @@
+
+
+
+
+=> Kết luận:
+
+    - Bản chất của Command Pattern là tham số hóa Object thành một lệnh khi gọi lệnh tức là gọi object đó
+
+    - Lợi ích: 
+
+        + Dễ dàng thêm các Command mới trong hệ thống mà không cần thay đổi trong các lớp hiện có. Đảm bảo Open/ Close Priciple
+
+        + Tách đối tượng gọi operation từ đối tượng thực sự thực hiện operation. Giảm kết nối giữa Invoker và Receiver 
+
+        + Cho phép tham số hóa các yêu cầu khác nhau bằng một hành động để thực hiện
+
+        + Cho phép lưu các yêu cầu trong hàng đợi
+
+        + Đóng gói một yêu cầu trong một đối tượng. Dễ dàng chuyển dữ liệu dưới dạng đối tượng giữa các thành phần hệ thống 
+
+
+    - Sử dụng khi nào: 
+
+        + Tham số hóa các đối tượng theo một hành động thực hiện
+
+        + Khi cần tạo và thực thi các yêu cầu vào các thời điểm khác nhau
+
+        + Khi cần hỗ trợ tính năng undo, log, callback hoặc transaction 
