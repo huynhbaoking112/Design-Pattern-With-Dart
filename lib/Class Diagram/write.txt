@@ -1,0 +1,53 @@
+    - Định nghĩa:
+    
+        + Class diagram mô tả kiểu của các đối tượng trong hệ thống và các loại quan hệ khác nhau tồn tại giữa chúng.
+        
+        + Là một kỹ thuật mô hình hóa tồn tại ở tất cả các phương pháp phát triển hướng đối tượng.
+
+        + Biểu đồ hay dùng nhất trong UML và gần gũi nhất với các lập trình viên.
+
+        + Giúp các lập trình viên trao đổi với nhau và hiểu rõ ý tưởng của nhau.
+
+    - Các tính chất cơ bản của class diagram
+
+        + Tên class
+
+        + Attribute (field, property)
+
+        + Operation ( method, function )
+
+    ![Alt text](king.webp)
+    <img src="king.webp"> 
+
+
+    - Access Modifier: 
+
+        + Dùng để đặc tả phạm vi truy cập cho các Attribute và Opearation của 1 class
+
+        + Có 4 lựa chọn phạm vi truy cập: 
+
+            Private( - ) 
+
+            Public( + )
+
+            Protected( # ) 
+
+    <img src='bin.webp'>
+    ![Alt text](bin.webp)
+
+    - Relationship trong class diagram
+
+        + Sử dụng để thể hiện mối quan hệ giữa đối tượng được tạo từ 1 class với các đối tượng được tạo từ class khác trong class diagram
+
+        + 4 loại Relationship:
+
+    <img src='cuong.webp'>
+    ![Alt text](cuong.webp)
+
+                Inheritance: 1 class kế thừa từ 1 class khác
+
+                Association: 2 class có lên hệ với nhau nhưng không chỉ rõ mối liên hệ
+
+                Composition: Đối tượng tạo từ class A mất thì đối tượng tạo từ class B sẽ mất
+
+                Agreegation: Đối tượng tạo từ class A mất thì đối tượng tạo từ class B vẫn tồn tại độc lập
