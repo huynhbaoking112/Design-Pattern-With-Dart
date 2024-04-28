@@ -1,0 +1,20 @@
+=> Kết luận:
+
+    - Bản chất của state pattern là tạo một lớp interface chung cho các state trong lớp này sẽ cấu truc một phương thức dùng chung cho các state tiếp theo đó là tạo một lớp chính, lớp chính này sẽ nhận đối số là các object được implement từ interface chung cho các state. Nếu như có sự thay đổi thì lớp chính này sẽ gọi ra phương thức dùng chung cho các state đó
+
+    - Lợi ích: 
+
+        + Đảm bảo nguyên tắc SRP: Tách biệt mỗi State trương ứng với 1 class riêng biệt
+
+        + đảm bảo nguyên tắc Open/ Closed Principle : Chúng ta có thể thêm mootj state mới mà không ảnh hưởng đến State khác hay Context hiện có
+
+        + Giữ hành vi cụ thể tương ứng với trạng thái
+
+
+        + Giúp chuyển trạng thái một cách rõ ràng
+
+    - Trường hợp sử dụng: 
+
+        + Khi hành vi của đối tượng phụ thuộc vào trạng thái của nó và nó phải có khả năng thay đổi hành vi của nó lúc runtime theo trạng thái mới
+
+        + Khi nhiều điều kiện phức tạp buộc đối tượng phụ thuộc vào trạng thái của nó 
